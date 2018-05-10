@@ -1,0 +1,18 @@
+.top-tab{
+	height: 36px;
+	width: 750rpx;
+    color: #fff;
+    font-size: 12px;
+    background-color: #DD6263;
+    z-index: 9999;
+    display: flex;
+    justify-content:space-around;
+	align-items:center;
+}
+.top-tab view{
+	padding: 6px 0;
+}
+.top-tab .active{
+	font-size: 14px;
+	border-bottom: 2px solid #fff;
+}

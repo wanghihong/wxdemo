@@ -1,0 +1,43 @@
+<!-- 模板引入 -->
+<import src="../common/mainCell.wxml"/>
+<view class="top-tab" >
+    <view class="{{tabcurrent==idx ?  'active' : ''}}" wx:for="{{tabItems}}" wx:for-index="idx" data-idx="{{idx}}"  bindtap="switchTap">{{item}}</view>
+</view>
+<swiper circular="true" style="height:{{swiperHeight}}px" bindchange="bindChange" current="{{tabcurrent}}">
+    <swiper-item >
+        <scroll-view class="scrollView" scroll-y="true">
+            <block wx:for="{{allDataList}}">
+                <template is="mainCell" data="{{item}}"></template>
+            </block>
+     	</scroll-view>
+    </swiper-item>
+    <swiper-item >
+        <scroll-view class="scrollView" scroll-y="true">
+            <block wx:for="{{videoDataList}}">
+                <template is="mainCell" data="{{item}}"></template>
+            </block>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item >
+        <scroll-view class="scrollView" scroll-y="true">
+            <block wx:for="{{pictureDataList}}">
+                <template is="mainCell" data="{{item}}"></template>
+            </block>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item >
+        <scroll-view class="scrollView" scroll-y="true">
+            <block wx:for="{{textDataList}}">
+                <template is="mainCell" data="{{item}}"></template>
+            </block>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item >
+        <scroll-view class="scrollView" scroll-y="true">
+            <block wx:for="{{voiceDataList}}">
+                <template is="mainCell" data="{{item}}"></template>
+            </block>
+        </scroll-view>
+    </swiper-item>
+  
+</swiper>

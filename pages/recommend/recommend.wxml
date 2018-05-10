@@ -1,0 +1,12 @@
+<view class="list-wrap">
+	<view class="list" wx:for="{{4}}">
+		<image class="left-img" src="../../images/other/header_cry_icon.png"></image>
+		<view class="text-right">
+			<text class="title">萌宠</text>
+			<text class="day-data">今日更新：| 当前在线：</text>
+			<text class="topic">萌宠djsjdjs</text>		
+		</view>
+		<image class="right-arrow"  src="../../images/other/arrow.png" ></image>
+	</view>
+	
+</view>

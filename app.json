@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news",
+    "pages/recommend/recommend",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#DD6263",
+    "navigationBarTitleText": "百思不得姐",
+    "navigationBarTextStyle":"#fff"
+  },
+   "tabBar": {
+    "color":"",
+    "selectedColor":"#515151",
+
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/tabBar_essence_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_essence_click_icon.png"
+      }, {
+        "pagePath": "pages/news/news",
+        "text": "新帖",
+        "iconPath": "images/tabBar/tabBar_friendTrends_icon.png",
+        "selectedIconPath": "images/tabBar/tabBar_friendTrends_click_icon.png"
+      },{
+          "pagePath": "pages/recommend/recommend",
+          "text": "社区",
+          "iconPath": "images/tabBar/tabBar_new_icon.png",
+          "selectedIconPath": "images/tabBar/tabBar_new_click_icon.png"
+      },
+      {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "images/tabBar/tabBar_me_icon.png",
+          "selectedIconPath": "images/tabBar/tabBar_me_click_icon.png"
+      }
+    ]
+  }
+}
